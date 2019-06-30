@@ -6,7 +6,7 @@ published: true
 ---
 I am a Data Scientist at AgaraLabs who works on exploiting Deep Learning for Speech and Natural Language Processing. 
 I was previously working on Computer Vision based Applications at SigTuple (I have a lot of interesting stories here, perhaps you should ask me in person xP). 
-Of late, My Research interest has been Speech Signal Processing, Automatic Speech Recognition, Speech Synthesis, Deeplearning and Multimodal Signal Processing/Machine Learning.
+Of late, My Research interest has been Speech Signal Processing, Automatic Speech Recognition, Speech Synthesis, Deep Learning and Multimodal Signal Processing/Machine Learning.
 
 From the inception of my professional career, 
 I have been actively involved in Software Development to cater the needs of my organisation and taken up keen interest in learning about it. 
