@@ -12,8 +12,8 @@ From the inception of my professional career,
 I have been actively involved in Software Development to cater the needs of my organisation and taken up keen interest in learning about it. 
 My hobbies span a huge spectrum, some of them are: Football, Boxing, Yoga, Travelling and Philosophy.
 
-So, It is safe to say that I believe that _jack of all trades > ace of one_. 
-You get the idea by now, I am that friend who sounds self obsessed but take a leap of faith and 
+So, It is safe to say that I believe that **jack of all trades > ace of one**. 
+You get the idea by now, I am that friend who sounds self obsessed, egotistic and narcissistic but take a leap of faith and 
 assume that I am humble guy who is filled with great thoughts and wants to compile it somewhere.
 
 
