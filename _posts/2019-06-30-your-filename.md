@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: 'Don''t be evil? '
 ---
 ## Don't be evil? 
@@ -29,6 +29,3 @@ Few minutes later after I left I noticed that the mob stole my headphone and pow
 - Do the law enforcers care? Will I be ever comfortable approaching them with any issue or problems I may face?
 - I am a resident of Bangalore who knows the local language. I didn't have a slightest clue about how to mitigate the situation or make the policemen listen to me. Is it is worse for non-residents?
 - While discussing this situation with friends and family, the most popular opinion I received was to flee the scene and deal with consequences later. Is this right? Is this what I want my kids to learn? I could never have my moral compass deflect so far off.
-
-
-
