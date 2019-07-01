@@ -20,7 +20,7 @@ assume that I am humble guy who is filled with great thoughts and wants to compi
 #### Why start a blog?
  * I hope to write about my research misadventures, development tips and tricks, my thoughts about any popular opinion, 
  Raise questions which I need your opinion on and many more topics which I can't think of right now.
- * I feel that I hold strong unpopular opinion and I wanted to share it.
+ * I feel that I hold strong unpopular opinion and I want to share it.
  * It feels good to be heard.
  * Every once in a while I have incidents that I want to describe in words but lack the impetus to make me work on creating a website and host it. I couldn't say the same about my recent one.
  * I am not a big fan of any social media platforms.
