@@ -18,11 +18,17 @@ Feeling extremely unsettled, I payed them and left.
 
 Few minutes later after I left I noticed that the mob stole my headphone and powerbank which I left on the front seat. In utter disgust, I went back home. 
 
- I thought I would approached the police station which is closer to my house. They were highly uninterested to listen or note down the case details as the incident didn't happen under their jurisdiction. So, I am here writing this blog to make people aware
+ I thought I would approached the police station which is closer to my house. They were highly uninterested to listen or note down the case details as the incident didn't happen under their jurisdiction. So, I am here. Developing this website and writing this blog.
+ 
+ I chose a nonchalant mode of expression to convey the incident in the most natural and disinterested manner as possible so that the reader is unaffected by my emotions. I am going to leave you here with few thoughts that may not. 
 
 ### Here are some thoughts that linger in my head:
 - What should one do in my situation? Should I get out and possibly think about helping others? Or choose to be indifferent?
 - Was the mob trained? They knew for sure who was going to be the good cop and who is going to be the bad cop? If so, how many people have been harassed like this?
 - What made them comfortable to physically and verbally abuse me? Are they not fearful of the consequences? What does one do to protect himself?
-- Do the law enforcers care?
+- Do the law enforcers care? Will I be ever comfortable approaching them with any issue or problems I may face?
+- I am a resident of Bangalore who knows the local language. I didn't have a slightest clue about how to mitigate the situation or make the police listen to me. It is worse for non-residents?
+- While discussing this situation with friends and family, the most popular opinion I received was to flee the scene and deal with consequences later. Is this right? Is this what I would want to teach my kids? I can never have my moral compass deflect so far off.
+
+
 
