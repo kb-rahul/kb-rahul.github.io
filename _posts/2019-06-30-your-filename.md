@@ -3,8 +3,7 @@ layout: post
 published: true
 title: 'Don''t be evil? '
 ---
-## Don't be evil? 
-
+## Is being wise different from being right?
 I have always wondered how I would act if I was in a perilous situation. I wouldn't say I have been in one but my recent incident comes close to it.
 
 
