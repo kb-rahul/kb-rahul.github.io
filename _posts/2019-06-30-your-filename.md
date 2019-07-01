@@ -4,7 +4,7 @@ published: true
 title: 'Don''t be evil? '
 ---
 ## Musing to rekindle
-I have always wondered how I would act if I was in a perilous situation. I wouldn't say I have been in one but my recent incident comes close to it.
+I have always wondered how I would act if I was in a perilous situation. I wouldn't say I have been in one but my recent experience comes close to it.
 
 
 What does a day on Bangalore road look like? If you ever reach your destination on time, you are mostly travelling on a Saturday Evening. My incident entails a similar time-line. I was driving my car on a quiet Saturday evening (29th June 2019) when I met with an accident. It involved an Auto rickshaw ramming into my car from behind. Hearing the screech, I got out of my car to check if I can help the auto-driver and assess the damage on my vehicle. I saw that his vehicle had suffered a slight dent and nothing happened to my car other than a scratch on the bumper. Thankfully, the Auto-driver was not injured. 
