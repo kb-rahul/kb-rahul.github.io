@@ -14,7 +14,7 @@ Within a moment, He quickly gathered a group of auto-drivers (around 10-15 peopl
 
 The gang saw me calling police and became even more violent. A couple of them took the liberty to **manhandle me**. 
 
-Meanwhile, another member in their group started negotiating money with me (_Good cop/bad cop tactics?_). Given the situation, I chose to pay. I insisted that I would make an online transaction (I wanted to record their details - Phone number and UPI). The policeman arrived just then. He was alone. He didn't own even a tiny bit of interest in listening to me and unsurprisingly, his advise was 
+Meanwhile, another member in their group started negotiating money with me (_Good cop/bad cop tactics?_). Given the situation, I chose to pay. I insisted that I would make an online transaction (I wanted to record their details - Phone number and UPI). The policeman arrived just then. He was alone. He didn't own even a tiny bit of interest in listening to me. Unsurprisingly, his advise was 
 > Settle the money and go.
 
 Feeling extremely unsettled, I payed them and left.
