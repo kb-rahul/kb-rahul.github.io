@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to work me?
+subtitle: Why you'd want to work with me?
 published: true
 ---
 I am a Data Scientist at AgaraLabs who works on exploiting Deep Learning for Speech and Natural Language Processing. 
