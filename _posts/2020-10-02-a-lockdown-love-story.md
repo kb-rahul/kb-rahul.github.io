@@ -1,7 +1,9 @@
 ---
 layout: post
-published: false
+published: true
 title: A lockdown love story
+subtitle: Happy Birthday Love
+date: '2020-10-05'
 ---
 ## Happy Birthday Naidile!
 ![In middle of a pose routine]({{site.baseurl}}/img/upload.jpg)
