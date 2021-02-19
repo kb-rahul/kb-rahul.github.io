@@ -5,7 +5,6 @@ title: Audio Forensics
 ---
 ## Footprint of a cellphone's microphone on the recorded audio.
 
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
 <style>
 .responsive-wrap iframe{ max-width: 100%;}
 </style>
