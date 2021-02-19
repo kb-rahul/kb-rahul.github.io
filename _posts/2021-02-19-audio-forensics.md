@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Audio Forensics
 date: 2021/02/19
 ---
