@@ -107,3 +107,7 @@ exclude:
   - CNAME
   - LICENSE
   - README.md
+  
+# External Plugins
+plugins:
+  - jekyll-pdf-embed
