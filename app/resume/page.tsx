@@ -84,11 +84,16 @@ export default function Resume() {
                 <p className="text-sm text-gray-500 dark:text-gray-400">Previous Role</p>
                 <ul className="mt-2 list-disc pl-5 text-gray-600 dark:text-gray-300">
                   <li>
-                    Developed Android applications and integrated hardware accessories using Google
-                    ADK.
+                    Designed and implemented high-performance backend systems and RESTful APIs.
                   </li>
-                  <li>Optimized mobile performance and implemented complex UI/UX designs.</li>
-                  <li>Transitioned legacy systems to modern cloud-native architectures.</li>
+                  <li>
+                    Optimized database queries and system architecture for scalability and
+                    reliability.
+                  </li>
+                  <li>
+                    Transitioned legacy monolithic applications to modern microservices
+                    architectures.
+                  </li>
                 </ul>
               </div>
             </div>
