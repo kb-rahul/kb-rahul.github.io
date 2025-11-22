@@ -7,9 +7,14 @@ export default function Resume() {
     <div className="divide-y divide-gray-200 dark:divide-gray-700">
       <div className="space-y-2 pt-6 pb-8 md:space-y-5">
         <div className="flex flex-col items-start justify-between gap-4 md:flex-row md:items-center">
-          <h1 className="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 dark:text-gray-100">
-            Resume
-          </h1>
+          <div>
+            <h1 className="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 dark:text-gray-100">
+              Resume
+            </h1>
+            <p className="mt-2 text-lg leading-7 text-gray-500 dark:text-gray-400">
+              Staff Machine Learning Engineer & TLM at Coinbase
+            </p>
+          </div>
           <a
             href="/resume.pdf"
             target="_blank"
@@ -33,248 +38,277 @@ export default function Resume() {
             Download PDF
           </a>
         </div>
-        <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-          Staff Machine Learning Engineer & TLM at Coinbase
-        </p>
       </div>
 
-      <div className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:space-y-0 xl:gap-x-8">
-        <div className="flex flex-col items-center pt-8">
-          <div className="prose dark:prose-invert max-w-none pt-8 pb-8 xl:col-span-2">
-            {/* Summary Section */}
-            <div className="mb-12">
-              <h2 className="mb-4 text-2xl font-bold text-gray-900 dark:text-gray-100">Summary</h2>
-              <p className="text-gray-600 dark:text-gray-300">
-                Staff Machine Learning Engineer driving AI-powered automation and security to
-                transform customer experience. I lead innovations in LLM-driven chat, search, fraud
-                detection, and agent assistance, building scalable systems that enhance efficiency,
-                personalization, and trust. Passionate about leading high-impact teams and bridging
-                the gap between research and production.
-              </p>
-            </div>
+      <div className="items-start space-y-2 pt-8 xl:grid xl:grid-cols-4 xl:space-y-0 xl:gap-x-8">
+        {/* Main Content - Takes up 3 columns */}
+        <div className="xl:col-span-3">
+          {/* Summary Section */}
+          <div className="mb-12">
+            <h2 className="mb-4 border-b border-gray-200 pb-2 text-2xl font-bold text-gray-900 dark:border-gray-700 dark:text-gray-100">
+              Summary
+            </h2>
+            <p className="text-lg leading-relaxed text-gray-600 dark:text-gray-300">
+              Staff Machine Learning Engineer driving AI-powered automation and security to
+              transform customer experience. I lead innovations in LLM-driven chat, search, fraud
+              detection, and agent assistance, building scalable systems that enhance efficiency,
+              personalization, and trust. Passionate about leading high-impact teams and bridging
+              the gap between research and production.
+            </p>
+          </div>
 
-            {/* Experience Section */}
-            <div className="mb-12">
-              <h2 className="mb-6 text-2xl font-bold text-gray-900 dark:text-gray-100">
-                Experience
-              </h2>
+          {/* Experience Section */}
+          <div className="mb-12">
+            <h2 className="mb-6 border-b border-gray-200 pb-2 text-2xl font-bold text-gray-900 dark:border-gray-700 dark:text-gray-100">
+              Experience
+            </h2>
 
-              <div className="border-primary-500 mb-8 border-l-2 pl-4">
-                <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200">
+            <div className="mb-10">
+              <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100">
                   Staff Machine Learning Engineer & TLM
                 </h3>
-                <p className="text-primary-500 text-sm font-semibold">Coinbase</p>
-                <p className="text-sm text-gray-500 dark:text-gray-400">Nov 2021 – Present</p>
-                <ul className="mt-2 list-disc pl-5 text-gray-600 dark:text-gray-300">
-                  <li>
-                    <strong>LLM-Powered Automation:</strong> Architected scalable systems
-                    transforming agent efficiency and customer self-service.
-                  </li>
-                  <li>
-                    <strong>Bad Actor Guardrails:</strong> Developed a system detecting agent
-                    solicitations with &gt;99% precision using LLMs ($XXM impact).
-                  </li>
-                  <li>
-                    <strong>Coinbase Chatbot:</strong> Built the first in-house LLM chatbot
-                    automating ~50% of chat contacts ($XXM impact).
-                  </li>
-                  <li>
-                    <strong>Agent Assist:</strong> Designed reactive and proactive recommendations
-                    to support agents ($XM impact).
-                  </li>
-                  <li>
-                    <strong>Help Center Search:</strong> Built LLM-powered search improving
-                    relevance and precision ($XXXK impact).
-                  </li>
-                </ul>
+                <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                  Nov 2021 – Present
+                </span>
               </div>
-
-              <div className="mb-8 border-l-2 border-gray-200 pl-4 dark:border-gray-700">
-                <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200">
-                  Founding/Lead Machine Learning Scientist
-                </h3>
-                <p className="text-primary-500 text-sm font-semibold">
-                  Agara (Acquired by Coinbase)
-                </p>
-                <p className="text-sm text-gray-500 dark:text-gray-400">June 2018 – Nov 2021</p>
-                <ul className="mt-2 list-disc pl-5 text-gray-600 dark:text-gray-300">
-                  <li>
-                    Pioneered AI-driven voice automation and real-time conversation intelligence.
-                  </li>
-                  <li>
-                    <strong>Voice Assist:</strong> Implemented LSTM/BERT models for real-time agent
-                    assistance.
-                  </li>
-                  <li>
-                    <strong>Voice Auto:</strong> Created state-of-the-art transformer TTS models for
-                    autonomous agents.
-                  </li>
-                </ul>
-              </div>
-
-              <div className="mb-8 border-l-2 border-gray-200 pl-4 dark:border-gray-700">
-                <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200">
-                  Computer Scientist
-                </h3>
-                <p className="text-primary-500 text-sm font-semibold">Sigtuple</p>
-                <p className="text-sm text-gray-500 dark:text-gray-400">July 2017 – June 2018</p>
-                <ul className="mt-2 list-disc pl-5 text-gray-600 dark:text-gray-300">
-                  <li>
-                    Developed <strong>Aadi</strong>, a computer vision-based analyzer for andrology
-                    using Deep Learning (UNet, ResNets).
-                  </li>
-                  <li>Solved multi-object tracking problems for medical imaging analysis.</li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Research Experience Section */}
-            <div className="mb-12">
-              <h2 className="mb-6 text-2xl font-bold text-gray-900 dark:text-gray-100">
-                Research Experience
-              </h2>
-
-              <div className="mb-8 border-l-2 border-gray-200 pl-4 dark:border-gray-700">
-                <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200">
-                  Research Assistant
-                </h3>
-                <p className="text-primary-500 text-sm font-semibold">
-                  Carnegie Mellon University (Music Technology Group)
-                </p>
-                <p className="text-sm text-gray-500 dark:text-gray-400">Feb 2017 – June 2017</p>
-                <ul className="mt-2 list-disc pl-5 text-gray-600 dark:text-gray-300">
-                  <li>
-                    Developed <strong>FLOCTRL</strong>, a platform for the Laptop Orchestra using
-                    Forward Synchronous Time-map.
-                  </li>
-                  <li>
-                    Established discovery protocols for dynamic device identity and algorithmic
-                    music composition.
-                  </li>
-                </ul>
-              </div>
-
-              <div className="mb-8 border-l-2 border-gray-200 pl-4 dark:border-gray-700">
-                <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200">
-                  Research Assistant
-                </h3>
-                <p className="text-primary-500 text-sm font-semibold">
-                  IIT Gandhinagar (Audio Forensics Lab)
-                </p>
-                <p className="text-sm text-gray-500 dark:text-gray-400">May 2016 – July 2016</p>
-                <ul className="mt-2 list-disc pl-5 text-gray-600 dark:text-gray-300">
-                  <li>
-                    Implemented automatic cellphone detection algorithms using high-frequency audio
-                    feature analysis.
-                  </li>
-                  <li>
-                    Developed stochastic feature-based learning models for device recognition.
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Patents Section */}
-            <div className="mb-12">
-              <h2 className="mb-6 text-2xl font-bold text-gray-900 dark:text-gray-100">Patents</h2>
-              <ul className="list-disc pl-5 text-gray-600 dark:text-gray-300">
+              <div className="text-primary-500 mb-2 font-medium">Coinbase</div>
+              <ul className="list-disc space-y-2 pl-5 text-gray-600 dark:text-gray-300">
                 <li>
-                  <strong>Text-to-SQL Model Anchor Query Generation</strong> (Pending, May 2024)
+                  <strong>LLM-Powered Automation:</strong> Architected scalable systems transforming
+                  agent efficiency and customer self-service.
                 </li>
                 <li>
-                  <a
-                    href="https://patents.google.com/patent/US20210319481A1"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-primary-500 hover:underline"
-                  >
-                    System and method for summarizing of customer interaction
-                  </a>{' '}
-                  (US20210319481A1, Oct 2021)
+                  <strong>Bad Actor Guardrails:</strong> Developed a system detecting agent
+                  solicitations with &gt;99% precision using LLMs ($XXM impact).
                 </li>
                 <li>
-                  <a
-                    href="https://patents.google.com/patent/US20200209221A1"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-primary-500 hover:underline"
-                  >
-                    A method and system for evaluating quality of semen sample
-                  </a>{' '}
-                  (US20200209221A1, Feb 2020)
+                  <strong>Coinbase Chatbot:</strong> Built the first in-house LLM chatbot automating
+                  ~50% of chat contacts ($XXM impact).
+                </li>
+                <li>
+                  <strong>Agent Assist:</strong> Designed reactive and proactive recommendations to
+                  support agents ($XM impact).
+                </li>
+                <li>
+                  <strong>Help Center Search:</strong> Built LLM-powered search improving relevance
+                  and precision ($XXXK impact).
                 </li>
               </ul>
             </div>
 
-            {/* Education Section */}
-            <div className="mb-12">
-              <h2 className="mb-4 text-2xl font-bold text-gray-900 dark:text-gray-100">
-                Education
-              </h2>
-              <div className="mb-4 border-l-2 border-gray-200 pl-4 dark:border-gray-700">
-                <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200">
-                  Master of Computer Science
+            <div className="mb-10">
+              <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100">
+                  Founding/Lead Machine Learning Scientist
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300">
-                  University of Illinois Urbana-Champaign (2023)
-                </p>
-                <p className="text-sm text-gray-500">GPA: 3.91</p>
+                <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                  June 2018 – Nov 2021
+                </span>
               </div>
-              <div className="border-l-2 border-gray-200 pl-4 dark:border-gray-700">
-                <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200">
-                  B.Tech, Electrical and Electronics Engineering
+              <div className="text-primary-500 mb-2 font-medium">Agara (Acquired by Coinbase)</div>
+              <ul className="list-disc space-y-2 pl-5 text-gray-600 dark:text-gray-300">
+                <li>
+                  Pioneered AI-driven voice automation and real-time conversation intelligence.
+                </li>
+                <li>
+                  <strong>Voice Assist:</strong> Implemented LSTM/BERT models for real-time agent
+                  assistance.
+                </li>
+                <li>
+                  <strong>Voice Auto:</strong> Created state-of-the-art transformer TTS models for
+                  autonomous agents.
+                </li>
+              </ul>
+            </div>
+
+            <div className="mb-10">
+              <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100">
+                  Computer Scientist
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300">
-                  National Institute of Technology, Karnataka (2017)
-                </p>
-                <p className="text-sm text-gray-500">CGPA: 8.6</p>
+                <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                  July 2017 – June 2018
+                </span>
+              </div>
+              <div className="text-primary-500 mb-2 font-medium">Sigtuple</div>
+              <ul className="list-disc space-y-2 pl-5 text-gray-600 dark:text-gray-300">
+                <li>
+                  Developed <strong>Aadi</strong>, a computer vision-based analyzer for andrology
+                  using Deep Learning (UNet, ResNets).
+                </li>
+                <li>Solved multi-object tracking problems for medical imaging analysis.</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Research Experience Section */}
+          <div className="mb-12">
+            <h2 className="mb-6 border-b border-gray-200 pb-2 text-2xl font-bold text-gray-900 dark:border-gray-700 dark:text-gray-100">
+              Research Experience
+            </h2>
+
+            <div className="mb-8">
+              <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100">
+                  Research Assistant
+                </h3>
+                <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                  Feb 2017 – June 2017
+                </span>
+              </div>
+              <div className="text-primary-500 mb-2 font-medium">
+                Carnegie Mellon University (Music Technology Group)
+              </div>
+              <ul className="list-disc space-y-2 pl-5 text-gray-600 dark:text-gray-300">
+                <li>
+                  Developed <strong>FLOCTRL</strong>, a platform for the Laptop Orchestra using
+                  Forward Synchronous Time-map.
+                </li>
+                <li>
+                  Established discovery protocols for dynamic device identity and algorithmic music
+                  composition.
+                </li>
+              </ul>
+            </div>
+
+            <div className="mb-8">
+              <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100">
+                  Research Assistant
+                </h3>
+                <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                  May 2016 – July 2016
+                </span>
+              </div>
+              <div className="text-primary-500 mb-2 font-medium">
+                IIT Gandhinagar (Audio Forensics Lab)
+              </div>
+              <ul className="list-disc space-y-2 pl-5 text-gray-600 dark:text-gray-300">
+                <li>
+                  Implemented automatic cellphone detection algorithms using high-frequency audio
+                  feature analysis.
+                </li>
+                <li>Developed stochastic feature-based learning models for device recognition.</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Patents Section */}
+          <div className="mb-12">
+            <h2 className="mb-6 border-b border-gray-200 pb-2 text-2xl font-bold text-gray-900 dark:border-gray-700 dark:text-gray-100">
+              Patents
+            </h2>
+            <ul className="list-disc space-y-3 pl-5 text-gray-600 dark:text-gray-300">
+              <li>
+                <span className="font-medium">Text-to-SQL Model Anchor Query Generation</span>
+                <span className="block text-sm text-gray-500">Pending, May 2024</span>
+              </li>
+              <li>
+                <a
+                  href="https://patents.google.com/patent/US20210319481A1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary-500 font-medium hover:underline"
+                >
+                  System and method for summarizing of customer interaction
+                </a>
+                <span className="block text-sm text-gray-500">US20210319481A1, Oct 2021</span>
+              </li>
+              <li>
+                <a
+                  href="https://patents.google.com/patent/US20200209221A1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary-500 font-medium hover:underline"
+                >
+                  A method and system for evaluating quality of semen sample
+                </a>
+                <span className="block text-sm text-gray-500">US20200209221A1, Feb 2020</span>
+              </li>
+            </ul>
+          </div>
+
+          {/* Education Section */}
+          <div className="mb-12">
+            <h2 className="mb-6 border-b border-gray-200 pb-2 text-2xl font-bold text-gray-900 dark:border-gray-700 dark:text-gray-100">
+              Education
+            </h2>
+            <div className="space-y-6">
+              <div>
+                <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between">
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100">
+                    Master of Computer Science
+                  </h3>
+                  <span className="text-sm font-medium text-gray-500 dark:text-gray-400">2023</span>
+                </div>
+                <div className="text-gray-600 dark:text-gray-300">
+                  University of Illinois Urbana-Champaign
+                </div>
+                <div className="text-sm text-gray-500">GPA: 3.91</div>
+              </div>
+              <div>
+                <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between">
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100">
+                    B.Tech, Electrical and Electronics Engineering
+                  </h3>
+                  <span className="text-sm font-medium text-gray-500 dark:text-gray-400">2017</span>
+                </div>
+                <div className="text-gray-600 dark:text-gray-300">
+                  National Institute of Technology, Karnataka
+                </div>
+                <div className="text-sm text-gray-500">CGPA: 8.6</div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Sidebar / Contact Info */}
-        <div className="hidden pt-8 xl:block">
-          <div className="rounded-lg bg-gray-50 p-6 dark:bg-gray-800">
-            <h3 className="mb-4 text-lg font-bold text-gray-900 dark:text-gray-100">Contact</h3>
-            <div className="space-y-3">
+        {/* Sidebar / Contact Info - Takes up 1 column */}
+        <div className="xl:col-span-1">
+          <div className="sticky top-8 rounded-lg border border-gray-100 bg-gray-50 p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800">
+            <h3 className="mb-4 text-lg text-sm font-bold tracking-wider text-gray-900 uppercase dark:text-gray-100">
+              Contact
+            </h3>
+            <div className="mb-8 space-y-3">
               <a
                 href="mailto:kb.rahul15@gmail.com"
-                className="text-primary-500 flex items-center gap-2 hover:underline"
+                className="hover:text-primary-500 dark:hover:text-primary-400 flex items-center gap-2 text-gray-600 transition-colors dark:text-gray-300"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"
-                  className="h-5 w-5"
+                  className="h-5 w-5 shrink-0"
                 >
                   <path d="M3 4a2 2 0 00-2 2v1.161l8.441 4.221a1.25 1.25 0 001.118 0L19 7.162V6a2 2 0 00-2-2H3z" />
                   <path d="M19 8.839l-7.77 3.885a2.75 2.75 0 01-2.46 0L1 8.839V14a2 2 0 002 2h14a2 2 0 002-2V8.839z" />
                 </svg>
-                kb.rahul15@gmail.com
+                <span className="truncate">kb.rahul15@gmail.com</span>
               </a>
               <a
                 href="https://www.linkedin.com/in/rahul-k-b-726a81a0/"
-                className="text-primary-500 flex items-center gap-2 hover:underline"
+                className="hover:text-primary-500 dark:hover:text-primary-400 flex items-center gap-2 text-gray-600 transition-colors dark:text-gray-300"
               >
-                <svg fill="currentColor" viewBox="0 0 24 24" className="h-5 w-5">
+                <svg fill="currentColor" viewBox="0 0 24 24" className="h-5 w-5 shrink-0">
                   <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                 </svg>
-                LinkedIn Profile
+                LinkedIn
               </a>
               <a
                 href="https://github.com/kb-rahul"
-                className="text-primary-500 flex items-center gap-2 hover:underline"
+                className="hover:text-primary-500 dark:hover:text-primary-400 flex items-center gap-2 text-gray-600 transition-colors dark:text-gray-300"
               >
-                <svg fill="currentColor" viewBox="0 0 24 24" className="h-5 w-5">
+                <svg fill="currentColor" viewBox="0 0 24 24" className="h-5 w-5 shrink-0">
                   <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                 </svg>
-                GitHub Profile
+                GitHub
               </a>
             </div>
 
-            <div className="mt-8">
-              <h3 className="mb-4 text-lg font-bold text-gray-900 dark:text-gray-100">Skills</h3>
+            <div>
+              <h3 className="mb-4 text-lg text-sm font-bold tracking-wider text-gray-900 uppercase dark:text-gray-100">
+                Skills
+              </h3>
               <div className="flex flex-wrap gap-2">
                 {[
                   'PyTorch',
@@ -290,7 +324,7 @@ export default function Resume() {
                 ].map((skill) => (
                   <span
                     key={skill}
-                    className="bg-primary-100 text-primary-800 dark:bg-primary-900 dark:text-primary-100 rounded px-2 py-1 text-xs font-medium"
+                    className="rounded-full border border-gray-200 bg-gray-100 px-3 py-1 text-xs font-medium text-gray-800 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-200"
                   >
                     {skill}
                   </span>
