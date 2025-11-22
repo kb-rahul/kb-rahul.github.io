@@ -34,7 +34,7 @@ export default function Resume() {
           </a>
         </div>
         <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-          Staff Machine Learning Engineer & Technical Leader
+          Staff Machine Learning Engineer & TLM at Coinbase
         </p>
       </div>
 
@@ -45,10 +45,11 @@ export default function Resume() {
             <div className="mb-12">
               <h2 className="mb-4 text-2xl font-bold text-gray-900 dark:text-gray-100">Summary</h2>
               <p className="text-gray-600 dark:text-gray-300">
-                Staff Machine Learning Engineer and Technical Leader with over 8 years of experience
-                in architecting and deploying scalable AI systems. Specialized in Multi-Agent
-                Systems, MLOps, and Cloud Infrastructure (AWS/GCP). Proven track record of leading
-                high-performing teams and bridging the gap between research and production.
+                Staff Machine Learning Engineer driving AI-powered automation and security to
+                transform customer experience. I lead innovations in LLM-driven chat, search, fraud
+                detection, and agent assistance, building scalable systems that enhance efficiency,
+                personalization, and trust. Passionate about leading high-impact teams and bridging
+                the gap between research and production.
               </p>
             </div>
 
@@ -60,77 +61,89 @@ export default function Resume() {
 
               <div className="border-primary-500 mb-8 border-l-2 pl-4">
                 <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200">
-                  Staff Machine Learning Engineer
+                  Staff Machine Learning Engineer & TLM
                 </h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400">Current Role</p>
+                <p className="text-primary-500 text-sm font-semibold">Coinbase</p>
+                <p className="text-sm text-gray-500 dark:text-gray-400">Nov 2021 – Present</p>
                 <ul className="mt-2 list-disc pl-5 text-gray-600 dark:text-gray-300">
                   <li>
-                    Leading the development of Agentic AI systems using Google ADK and Multi-Agent
-                    frameworks.
+                    <strong>LLM-Powered Automation:</strong> Architected scalable systems
+                    transforming agent efficiency and customer self-service.
                   </li>
                   <li>
-                    Architecting scalable ML pipelines on AWS and GCP to serve millions of users.
+                    <strong>Bad Actor Guardrails:</strong> Developed a system detecting agent
+                    solicitations with &gt;99% precision using LLMs ($XXM impact).
                   </li>
                   <li>
-                    Mentoring a team of engineers and driving technical strategy for AI initiatives.
+                    <strong>Coinbase Chatbot:</strong> Built the first in-house LLM chatbot
+                    automating ~50% of chat contacts ($XXM impact).
+                  </li>
+                  <li>
+                    <strong>Agent Assist:</strong> Designed reactive and proactive recommendations
+                    to support agents ($XM impact).
+                  </li>
+                  <li>
+                    <strong>Help Center Search:</strong> Built LLM-powered search improving
+                    relevance and precision ($XXXK impact).
                   </li>
                 </ul>
               </div>
 
               <div className="mb-8 border-l-2 border-gray-200 pl-4 dark:border-gray-700">
                 <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200">
-                  Senior Software Engineer
+                  Founding/Lead Machine Learning Scientist
                 </h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400">Previous Role</p>
+                <p className="text-primary-500 text-sm font-semibold">
+                  Agara (Acquired by Coinbase)
+                </p>
+                <p className="text-sm text-gray-500 dark:text-gray-400">June 2018 – Nov 2021</p>
                 <ul className="mt-2 list-disc pl-5 text-gray-600 dark:text-gray-300">
                   <li>
-                    Designed and implemented high-performance backend systems and RESTful APIs.
+                    Pioneered AI-driven voice automation and real-time conversation intelligence.
                   </li>
                   <li>
-                    Optimized database queries and system architecture for scalability and
-                    reliability.
+                    <strong>Voice Assist:</strong> Implemented LSTM/BERT models for real-time agent
+                    assistance.
                   </li>
                   <li>
-                    Transitioned legacy monolithic applications to modern microservices
-                    architectures.
+                    <strong>Voice Auto:</strong> Created state-of-the-art transformer TTS models for
+                    autonomous agents.
                   </li>
+                </ul>
+              </div>
+
+              <div className="mb-8 border-l-2 border-gray-200 pl-4 dark:border-gray-700">
+                <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200">
+                  Computer Scientist
+                </h3>
+                <p className="text-primary-500 text-sm font-semibold">Sigtuple</p>
+                <p className="text-sm text-gray-500 dark:text-gray-400">July 2017 – June 2018</p>
+                <ul className="mt-2 list-disc pl-5 text-gray-600 dark:text-gray-300">
+                  <li>
+                    Developed <strong>Aadi</strong>, a computer vision-based analyzer for andrology
+                    using Deep Learning (UNet, ResNets).
+                  </li>
+                  <li>Solved multi-object tracking problems for medical imaging analysis.</li>
                 </ul>
               </div>
             </div>
 
-            {/* Skills Section */}
+            {/* Patents Section */}
             <div className="mb-12">
-              <h2 className="mb-6 text-2xl font-bold text-gray-900 dark:text-gray-100">
-                Technical Skills
-              </h2>
-              <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-                <div>
-                  <h3 className="font-semibold text-gray-800 dark:text-gray-200">
-                    Machine Learning
-                  </h3>
-                  <p className="text-gray-600 dark:text-gray-300">
-                    TensorFlow, PyTorch, Scikit-learn, NLP, Computer Vision
-                  </p>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-800 dark:text-gray-200">Cloud & DevOps</h3>
-                  <p className="text-gray-600 dark:text-gray-300">
-                    AWS, GCP, Docker, Kubernetes, CI/CD
-                  </p>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-800 dark:text-gray-200">Languages</h3>
-                  <p className="text-gray-600 dark:text-gray-300">
-                    Python, Java, Kotlin, JavaScript/TypeScript, SQL
-                  </p>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-800 dark:text-gray-200">Frameworks</h3>
-                  <p className="text-gray-600 dark:text-gray-300">
-                    Google ADK, LangChain, Next.js, React
-                  </p>
-                </div>
-              </div>
+              <h2 className="mb-6 text-2xl font-bold text-gray-900 dark:text-gray-100">Patents</h2>
+              <ul className="list-disc pl-5 text-gray-600 dark:text-gray-300">
+                <li>
+                  <strong>Text-to-SQL Model Anchor Query Generation</strong> (Pending, May 2024)
+                </li>
+                <li>
+                  <strong>System and method for summarizing of customer interaction</strong>{' '}
+                  (US20210319481A1, Oct 2021)
+                </li>
+                <li>
+                  <strong>A method and system for evaluating quality of semen sample</strong>{' '}
+                  (US20200209221A1, Feb 2020)
+                </li>
+              </ul>
             </div>
 
             {/* Education Section */}
@@ -138,11 +151,23 @@ export default function Resume() {
               <h2 className="mb-4 text-2xl font-bold text-gray-900 dark:text-gray-100">
                 Education
               </h2>
+              <div className="mb-4 border-l-2 border-gray-200 pl-4 dark:border-gray-700">
+                <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200">
+                  Master of Computer Science
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300">
+                  University of Illinois Urbana-Champaign (2023)
+                </p>
+                <p className="text-sm text-gray-500">GPA: 3.91</p>
+              </div>
               <div className="border-l-2 border-gray-200 pl-4 dark:border-gray-700">
                 <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200">
-                  Bachelor of Technology
+                  B.Tech, Electrical and Electronics Engineering
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300">Computer Science & Engineering</p>
+                <p className="text-gray-600 dark:text-gray-300">
+                  National Institute of Technology, Karnataka (2017)
+                </p>
+                <p className="text-sm text-gray-500">CGPA: 8.6</p>
               </div>
             </div>
           </div>
@@ -186,6 +211,31 @@ export default function Resume() {
                 </svg>
                 GitHub Profile
               </a>
+            </div>
+
+            <div className="mt-8">
+              <h3 className="mb-4 text-lg font-bold text-gray-900 dark:text-gray-100">Skills</h3>
+              <div className="flex flex-wrap gap-2">
+                {[
+                  'PyTorch',
+                  'TensorFlow',
+                  'LLMs',
+                  'GenAI',
+                  'AWS',
+                  'GCP',
+                  'Flink',
+                  'Spark',
+                  'Airflow',
+                  'Git',
+                ].map((skill) => (
+                  <span
+                    key={skill}
+                    className="bg-primary-100 text-primary-800 dark:bg-primary-900 dark:text-primary-100 rounded px-2 py-1 text-xs font-medium"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
         </div>
