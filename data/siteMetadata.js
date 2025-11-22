@@ -1,8 +1,8 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Rahul\'s Personal Website',
+  title: "Rahul's Personal Website",
   author: 'Rahul',
-  headerTitle: 'Rahul\'s Blog',
+  headerTitle: "Rahul's Blog",
   description: 'My personal journey, thoughts, and portfolio.',
   language: 'en-us',
   theme: 'system', // system, dark or light
@@ -45,9 +45,9 @@ const siteMetadata = {
     // posthogAnalytics: {
     //   posthogProjectApiKey: '', // e.g. 123e4567-e89b-12d3-a456-426614174000
     // },
-    // googleAnalytics: {
-    //   googleAnalyticsId: '', // e.g. G-XXXXXXX
-    // },
+    googleAnalytics: {
+      googleAnalyticsId: 'G-2JWVD66PRZ',
+    },
   },
   newsletter: {
     // supports mailchimp, buttondown, convertkit, klaviyo, revue, emailoctopus, beehive
