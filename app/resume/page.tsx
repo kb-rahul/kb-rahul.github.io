@@ -128,6 +128,52 @@ export default function Resume() {
               </div>
             </div>
 
+            {/* Research Experience Section */}
+            <div className="mb-12">
+              <h2 className="mb-6 text-2xl font-bold text-gray-900 dark:text-gray-100">
+                Research Experience
+              </h2>
+
+              <div className="mb-8 border-l-2 border-gray-200 pl-4 dark:border-gray-700">
+                <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200">
+                  Research Assistant
+                </h3>
+                <p className="text-primary-500 text-sm font-semibold">
+                  Carnegie Mellon University (Music Technology Group)
+                </p>
+                <p className="text-sm text-gray-500 dark:text-gray-400">Feb 2017 – June 2017</p>
+                <ul className="mt-2 list-disc pl-5 text-gray-600 dark:text-gray-300">
+                  <li>
+                    Developed <strong>FLOCTRL</strong>, a platform for the Laptop Orchestra using
+                    Forward Synchronous Time-map.
+                  </li>
+                  <li>
+                    Established discovery protocols for dynamic device identity and algorithmic
+                    music composition.
+                  </li>
+                </ul>
+              </div>
+
+              <div className="mb-8 border-l-2 border-gray-200 pl-4 dark:border-gray-700">
+                <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200">
+                  Research Assistant
+                </h3>
+                <p className="text-primary-500 text-sm font-semibold">
+                  IIT Gandhinagar (Audio Forensics Lab)
+                </p>
+                <p className="text-sm text-gray-500 dark:text-gray-400">May 2016 – July 2016</p>
+                <ul className="mt-2 list-disc pl-5 text-gray-600 dark:text-gray-300">
+                  <li>
+                    Implemented automatic cellphone detection algorithms using high-frequency audio
+                    feature analysis.
+                  </li>
+                  <li>
+                    Developed stochastic feature-based learning models for device recognition.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
             {/* Patents Section */}
             <div className="mb-12">
               <h2 className="mb-6 text-2xl font-bold text-gray-900 dark:text-gray-100">Patents</h2>
@@ -136,11 +182,25 @@ export default function Resume() {
                   <strong>Text-to-SQL Model Anchor Query Generation</strong> (Pending, May 2024)
                 </li>
                 <li>
-                  <strong>System and method for summarizing of customer interaction</strong>{' '}
+                  <a
+                    href="https://patents.google.com/patent/US20210319481A1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary-500 hover:underline"
+                  >
+                    System and method for summarizing of customer interaction
+                  </a>{' '}
                   (US20210319481A1, Oct 2021)
                 </li>
                 <li>
-                  <strong>A method and system for evaluating quality of semen sample</strong>{' '}
+                  <a
+                    href="https://patents.google.com/patent/US20200209221A1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary-500 hover:underline"
+                  >
+                    A method and system for evaluating quality of semen sample
+                  </a>{' '}
                   (US20200209221A1, Feb 2020)
                 </li>
               </ul>
