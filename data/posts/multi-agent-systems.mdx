@@ -12,34 +12,74 @@ Single-agent systems are often insufficient for complex, multi-step tasks. **Mul
 
 ## Why Multi-Agent?
 
-- **Specialization**: One agent can be a "Coder," another a "Reviewer," and another a "Product Manager."
-- **Robustness**: Agents can critique and correct each other's work.
+- **Specialization**: One agent can be a "Coder," another a "Reviewer," and another a "Product Manager." This allows using different system prompts and even different LLMs for each role (e.g., GPT-4 for coding, Llama 3 for summarizing).
+- **Robustness**: Agents can critique and correct each other's work (Self-Reflection and Peer-Review).
 - **Scalability**: Complex workflows can be broken down into smaller, manageable sub-tasks.
 
-## Frameworks
+## Orchestration Patterns
+
+### 1. Joint Chat (Round Robin)
+
+Agents speak one after another in a loop. Good for brainstorming or simple collaboration.
+
+### 2. Hierarchical Chat (Manager-Worker)
+
+A "Manager" agent breaks down the task and assigns sub-tasks to "Worker" agents. The Manager aggregates the results. This is essential for complex projects.
+
+## Frameworks: AutoGen vs. CrewAI
 
 ### AutoGen (Microsoft)
 
-AutoGen allows defining agents that can converse with each other. It supports human-in-the-loop and various conversation patterns.
+AutoGen is highly flexible and event-driven. It models agents as "ConversableAgents" that can send and receive messages. It supports:
+
+- **Human-in-the-loop**: The user can intervene at any step.
+- **Code Execution**: Agents can write and execute Python code in a Docker container.
 
 ### CrewAI
 
-CrewAI focuses on role-playing agents. You define a "Crew" of agents with specific roles, goals, and backstories, and assign them tasks.
+CrewAI is more structured and role-based. You define a "Crew" of agents with specific:
 
-## Example Scenario: Software Development
+- **Role**: e.g., "Senior Researcher"
+- **Goal**: e.g., "Uncover the latest trends in AI"
+- **Backstory**: Gives the agent personality and context.
 
-Imagine a user asks: "Create a snake game in Python."
+## Code Example: AutoGen
 
-1.  **Product Manager Agent**: Breaks down the requirements (UI, logic, controls).
-2.  **Developer Agent**: Writes the code based on requirements.
-3.  **QA Agent**: Reviews the code, checks for bugs, and asks the Developer to fix them.
-4.  **User Proxy Agent**: Executes the code and reports the output.
+Here is how you might set up a simple two-agent system where a User Proxy asks an Assistant to plot a chart.
+
+```python
+from autogen import AssistantAgent, UserProxyAgent, config_list_from_json
+
+# Load LLM config
+config_list = config_list_from_json(env_or_file="OAI_CONFIG_LIST")
+
+# Create Assistant Agent (The Coder)
+assistant = AssistantAgent(
+    name="assistant",
+    llm_config={"config_list": config_list}
+)
+
+# Create User Proxy Agent (The Executor)
+user_proxy = UserProxyAgent(
+    name="user_proxy",
+    human_input_mode="TERMINATE",
+    max_consecutive_auto_reply=10,
+    is_termination_msg=lambda x: x.get("content", "").rstrip().endswith("TERMINATE"),
+    code_execution_config={"work_dir": "coding", "use_docker": False}
+)
+
+# Start the chat
+user_proxy.initiate_chat(
+    assistant,
+    message="Plot a chart of NVDA and TSLA stock price change YTD. Save the plot to a file."
+)
+```
 
 ## Challenges
 
-- **Coordination**: Ensuring agents stay on track and don't get stuck in loops.
-- **Cost & Latency**: Multiple agent calls increase token usage and response time.
-- **Evaluation**: Debugging interactions between agents is harder than debugging a single prompt.
+- **Infinite Loops**: Agents might get stuck thanking each other or repeating the same error.
+- **Context Window**: Long conversations can exceed the token limit. Memory management (summarizing past turns) is crucial.
+- **Cost & Latency**: Multiple agent calls increase token usage and response time significantly.
 
 ## Conclusion
 

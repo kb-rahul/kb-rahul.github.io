@@ -10,12 +10,32 @@ summary: 'Architecture and best practices for Retrieval-Augmented Generation (RA
 
 Large Language Models (LLMs) are powerful but limited to their training data. They hallucinate when asked about recent events or private documents. **Retrieval-Augmented Generation (RAG)** solves this by grounding the LLM with external context.
 
+![RAG Architecture Flow](/static/images/rag/architecture.png)
+
 ## The RAG Architecture
 
 1.  **Ingestion**: Documents are split into chunks and embedded into vectors using an embedding model (e.g., OpenAI text-embedding-3, HuggingFace models).
 2.  **Storage**: Vectors are stored in a Vector Database (e.g., Pinecone, Milvus, Chroma).
 3.  **Retrieval**: When a user asks a question, it is also embedded. The database finds the most similar chunks (semantic search).
 4.  **Generation**: The retrieved chunks are passed to the LLM as "context" along with the user's query.
+
+## Chunking Strategies
+
+How you split your text matters.
+
+- **Fixed-size chunking**: Splitting by character count (e.g., 500 chars). Simple but breaks context.
+- **Recursive chunking**: Splitting by separators (paragraphs, newlines) to keep semantic units together.
+- **Semantic chunking**: Using an embedding model to detect topic shifts and chunk accordingly.
+
+## Advanced Retrieval Techniques
+
+### Hybrid Search
+
+Semantic search (vectors) is great for concepts, but Keyword search (BM25) is better for exact matches (e.g., part numbers, names). **Hybrid Search** combines both scores to get the best of both worlds.
+
+### Re-ranking
+
+Vector search is fast but approximate. A **Cross-Encoder** (Re-ranker) is a slower but more accurate model that takes the query and the retrieved document pairs and outputs a relevance score. We use it to re-order the top 10-20 results from the vector search before sending the top 3-5 to the LLM.
 
 ## Code Snippet: Simple RAG Flow
 
@@ -37,12 +57,6 @@ qa = RetrievalQA.from_chain_type(llm=llm, chain_type="stuff", retriever=db.as_re
 query = "What does the company policy say about remote work?"
 print(qa.run(query))
 ```
-
-## Advanced RAG Techniques
-
-- **Hybrid Search**: Combining keyword search (BM25) with semantic search for better precision.
-- **Re-ranking**: Using a cross-encoder to re-rank retrieved documents before sending them to the LLM.
-- **Query Expansion**: Generating multiple variations of the user's query to broaden the search.
 
 ## Conclusion
 

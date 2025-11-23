@@ -10,40 +10,66 @@ summary: 'A technical breakdown of Transformer architectures in NLP, explaining 
 
 The "Transformer" architecture, introduced in the paper "Attention Is All You Need" (2017), revolutionized Natural Language Processing (NLP). It replaced Recurrent Neural Networks (RNNs) and LSTMs as the standard for sequence modeling.
 
-## The Attention Mechanism
+![Transformer Architecture Diagram](/static/images/nlp/architecture.png)
 
-The core innovation is **Self-Attention**. It allows the model to weigh the importance of different words in a sentence relative to each other, regardless of their distance.
+## The Core Innovation: Self-Attention
+
+Before Transformers, models processed words sequentially (one by one). This made it hard to capture long-range dependencies. **Self-Attention** allows the model to look at _all_ words in a sentence simultaneously and decide which ones are relevant to each other.
+
+### The Math of Attention
+
+The mechanism can be described as a retrieval system:
+
+1.  **Query (Q)**: What we are looking for.
+2.  **Key (K)**: What we match against.
+3.  **Value (V)**: The information we extract.
+
+![Self-Attention Mechanism](/static/images/nlp/attention.png)
+
+The attention score is calculated as:
 
 $$
 \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
 $$
 
-Where:
+- **$QK^T$**: Computes similarity between the Query and all Keys (dot product).
+- **$\sqrt{d_k}$**: Scaling factor to prevent gradients from vanishing.
+- **Softmax**: Normalizes scores to probabilities (sum to 1).
+- **$V$**: Weighted sum of Values based on the scores.
 
-- **Q (Query)**: What we are looking for.
-- **K (Key)**: What we match against.
-- **V (Value)**: The information we extract.
+### Multi-Head Attention
 
-## Architectures
+Instead of doing this once, we do it multiple times in parallel ("heads"). Each head can focus on different aspects of language (e.g., one head focuses on syntax, another on semantics).
 
-### Encoder-Only (e.g., BERT)
+## Architectures: Encoder vs. Decoder
+
+The original Transformer had both an Encoder and a Decoder. Modern LLMs often use just one part.
+
+### 1. Encoder-Only (e.g., BERT)
 
 - **Bidirectional**: Sees context from both left and right.
-- **Use cases**: Classification, Named Entity Recognition (NER), Question Answering.
+- **Masking**: Uses "Masked Language Modeling" (MLM) where random words are hidden and the model must guess them.
+- **Use cases**: Classification, Named Entity Recognition (NER), Sentiment Analysis.
 
-### Decoder-Only (e.g., GPT)
+### 2. Decoder-Only (e.g., GPT, Llama)
 
-- **Unidirectional**: Predicts the next token based on previous ones.
-- **Use cases**: Text generation, completion, creative writing.
+- **Unidirectional**: Predicts the next token based _only_ on previous ones (Causal Language Modeling).
+- **Use cases**: Text generation, code completion, creative writing.
 
-### Encoder-Decoder (e.g., T5, BART)
+### 3. Encoder-Decoder (e.g., T5, BART)
 
-- **Hybrid**: Encodes input and generates output.
+- **Hybrid**: Encodes input text and generates output text.
 - **Use cases**: Translation, Summarization.
 
 ## Scaling Laws
 
-We've learned that model performance scales with parameter count, dataset size, and compute. This realization led to the explosion of Large Language Models (LLMs) like GPT-3, PaLM, and Llama.
+We've learned that model performance scales predictably with:
+
+1.  **Parameter Count** (N)
+2.  **Dataset Size** (D)
+3.  **Compute** (C)
+
+This realization (Kaplan et al., 2020) led to the "arms race" of Large Language Models (LLMs), pushing from millions to trillions of parameters.
 
 ## Conclusion
 
