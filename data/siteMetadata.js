@@ -1,9 +1,9 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: "Rahul's Personal Website",
-  author: 'Rahul',
-  headerTitle: "Rahul's Blog",
-  description: 'My personal journey, thoughts, and portfolio.',
+  title: 'Rahul K B | Staff Machine Learning Engineer',
+  author: 'Rahul K B',
+  headerTitle: 'Rahul K B',
+  description: 'Insights on Agentic AI, LLMs, Audio Forensics, and Scalable Systems.',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://kb-rahul.github.io',
