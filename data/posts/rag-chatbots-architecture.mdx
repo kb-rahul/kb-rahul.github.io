@@ -1,0 +1,49 @@
+---
+title: 'Building RAG Chatbots: Bridging LLMs with Private Data'
+date: '2023-08-05'
+tags: ['rag', 'chatbots', 'llm', 'vector-db']
+draft: false
+summary: 'Architecture and best practices for Retrieval-Augmented Generation (RAG) chatbots, enabling LLMs to answer questions based on specific, private knowledge bases.'
+---
+
+# Building RAG Chatbots
+
+Large Language Models (LLMs) are powerful but limited to their training data. They hallucinate when asked about recent events or private documents. **Retrieval-Augmented Generation (RAG)** solves this by grounding the LLM with external context.
+
+## The RAG Architecture
+
+1.  **Ingestion**: Documents are split into chunks and embedded into vectors using an embedding model (e.g., OpenAI text-embedding-3, HuggingFace models).
+2.  **Storage**: Vectors are stored in a Vector Database (e.g., Pinecone, Milvus, Chroma).
+3.  **Retrieval**: When a user asks a question, it is also embedded. The database finds the most similar chunks (semantic search).
+4.  **Generation**: The retrieved chunks are passed to the LLM as "context" along with the user's query.
+
+## Code Snippet: Simple RAG Flow
+
+```python
+from langchain.chains import RetrievalQA
+from langchain.llms import OpenAI
+from langchain.vectorstores import Chroma
+from langchain.embeddings import OpenAIEmbeddings
+
+# Initialize components
+embeddings = OpenAIEmbeddings()
+db = Chroma(persist_directory="./chroma_db", embedding_function=embeddings)
+llm = OpenAI(temperature=0)
+
+# Create chain
+qa = RetrievalQA.from_chain_type(llm=llm, chain_type="stuff", retriever=db.as_retriever())
+
+# Ask question
+query = "What does the company policy say about remote work?"
+print(qa.run(query))
+```
+
+## Advanced RAG Techniques
+
+- **Hybrid Search**: Combining keyword search (BM25) with semantic search for better precision.
+- **Re-ranking**: Using a cross-encoder to re-rank retrieved documents before sending them to the LLM.
+- **Query Expansion**: Generating multiple variations of the user's query to broaden the search.
+
+## Conclusion
+
+RAG is the standard pattern for enterprise LLM applications. It provides accuracy, explainability (citations), and data privacy.

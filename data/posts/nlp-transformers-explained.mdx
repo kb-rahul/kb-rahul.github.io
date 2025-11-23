@@ -1,0 +1,50 @@
+---
+title: 'NLP and Transformers Explained: Attention is All You Need'
+date: '2023-05-20'
+tags: ['nlp', 'transformers', 'deep-learning', 'bert', 'gpt']
+draft: false
+summary: 'A technical breakdown of Transformer architectures in NLP, explaining the Attention mechanism, Encoder-Decoder structures, and the evolution from BERT to GPT-4.'
+---
+
+# NLP and Transformers Explained
+
+The "Transformer" architecture, introduced in the paper "Attention Is All You Need" (2017), revolutionized Natural Language Processing (NLP). It replaced Recurrent Neural Networks (RNNs) and LSTMs as the standard for sequence modeling.
+
+## The Attention Mechanism
+
+The core innovation is **Self-Attention**. It allows the model to weigh the importance of different words in a sentence relative to each other, regardless of their distance.
+
+$$
+\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
+$$
+
+Where:
+
+- **Q (Query)**: What we are looking for.
+- **K (Key)**: What we match against.
+- **V (Value)**: The information we extract.
+
+## Architectures
+
+### Encoder-Only (e.g., BERT)
+
+- **Bidirectional**: Sees context from both left and right.
+- **Use cases**: Classification, Named Entity Recognition (NER), Question Answering.
+
+### Decoder-Only (e.g., GPT)
+
+- **Unidirectional**: Predicts the next token based on previous ones.
+- **Use cases**: Text generation, completion, creative writing.
+
+### Encoder-Decoder (e.g., T5, BART)
+
+- **Hybrid**: Encodes input and generates output.
+- **Use cases**: Translation, Summarization.
+
+## Scaling Laws
+
+We've learned that model performance scales with parameter count, dataset size, and compute. This realization led to the explosion of Large Language Models (LLMs) like GPT-3, PaLM, and Llama.
+
+## Conclusion
+
+Transformers have become the foundation of modern AI, extending beyond NLP to Computer Vision (ViT) and Audio. Understanding attention is key to understanding the current AI landscape.
