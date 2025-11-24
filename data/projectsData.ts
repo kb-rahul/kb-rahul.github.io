@@ -7,20 +7,28 @@ interface Project {
 
 const projectsData: Project[] = [
   {
-    title: 'A Search Engine',
-    description: `What if you could look up any information in the world? Webpages, images, videos
-    and more. Google has many features to help you find exactly what you're looking
-    for.`,
-    imgSrc: '/static/images/google.png',
-    href: 'https://www.google.com',
+    title: 'Coinbase Chatbot',
+    description: `An in-house, LLM-powered chatbot automating ~50% of chat contacts. Enabled personalized, multi-turn interactions and autonomous knowledge retrieval.`,
+    imgSrc: '/static/images/coinbase_chatbot.png',
+    href: 'https://www.coinbase.com',
   },
   {
-    title: 'The Time Machine',
-    description: `Imagine being able to travel back in time or to the future. Simple turn the knob
-    to the desired date and press "Go". No more worrying about lost keys or
-    forgotten headphones with this simple yet affordable solution.`,
-    imgSrc: '/static/images/time-machine.jpg',
-    href: '/posts/the-time-machine',
+    title: 'Bad Actor Guardrails',
+    description: `A system to detect agent solicitations through chat and phone channels with >99% precision using LLMs, enhancing security.`,
+    imgSrc: '/static/images/bad_actor_guardrails.png',
+    href: 'https://www.coinbase.com',
+  },
+  {
+    title: 'Agent Assist',
+    description: `Reactive and proactive capabilities providing contextual recommendations to support agents and identify customer issues early.`,
+    imgSrc: '/static/images/agent_assist.png',
+    href: 'https://www.coinbase.com',
+  },
+  {
+    title: 'Help Center Search',
+    description: `LLM-powered search system leveraging Coinbase’s help center knowledge base to deliver real-time, contextual responses.`,
+    imgSrc: '/static/images/help_center_search.png',
+    href: 'https://www.coinbase.com',
   },
 ]
 
