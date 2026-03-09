@@ -84,7 +84,7 @@ export default function Resume() {
                 </li>
                 <li>
                   <strong>Coinbase Chatbot:</strong> Built the first in-house LLM chatbot automating
-                  ~50% of chat contacts ($XXM impact).
+                  ~70% of chat contacts ($XXM impact).
                 </li>
                 <li>
                   <strong>Agent Assist:</strong> Designed reactive and proactive recommendations to
