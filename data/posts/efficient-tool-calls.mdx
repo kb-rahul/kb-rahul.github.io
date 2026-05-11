@@ -1,0 +1,39 @@
+---
+title: 'Optimizing Tool Calls and Evaluating Agentic Systems'
+date: '2026-05-01'
+tags: ['evaluation', 'performance', 'tool-calls']
+draft: false
+summary: 'Best practices for optimizing tool usage by LLMs and frameworks for evaluating the performance of agentic systems.'
+---
+
+# Efficiency and Evaluation in Agentic Systems
+
+Once you have a working agent, the next step is optimization. Agentic workflows can quickly become slow and expensive due to multiple LLM calls.
+
+![Efficient Tools](/static/images/efficient-tools.png)
+
+## Optimizing Tool Calls
+
+Tool calling is the bridge between the LLM and the outside world. Making it efficient is crucial.
+
+- **Provide Specific Tools**: Don't give an agent a generic `run_python` tool if a specific `get_user_data` tool will do. Specific tools have constrained outputs and reduce the cognitive load on the LLM.
+- **Batching**: If an agent needs to fetch data for 10 users, provide a tool that accepts a list of user IDs rather than forcing the agent to make 10 separate tool calls.
+- **Clear Descriptions**: The LLM relies entirely on the tool's description and parameter schema. Ensure they are unambiguous. Ambiguity leads to errors and retries.
+
+## Evaluating Agentic Systems
+
+Evaluating an agent is much harder than evaluating a standard NLP model. You are not just checking text similarity; you are evaluating a trajectory of actions.
+
+### 1. Frameworks
+
+Frameworks like **AgentBench** or **WebArena** provide standardized environments to test agents on various tasks (e.g., navigating a website, interacting with a database).
+
+### 2. Custom Metrics
+
+For domain-specific agents, you need custom metrics:
+
+- **Task Success Rate**: Did the agent achieve the goal?
+- **Trajectory Efficiency**: How many steps did it take? Did it use tools optimally?
+- **Error Recovery Rate**: If a tool call failed, was the agent able to recover?
+
+Evaluating agents requires a shift from static datasets to dynamic environments where the agent's actions have real consequences.
